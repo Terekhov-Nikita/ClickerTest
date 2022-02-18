@@ -1,0 +1,25 @@
+body{
+    background-image: url('/picture.jpg');
+    background-position: 50% 10%;
+    padding-left: 28%;
+    padding-right: 29.5%;
+    text-align: center;
+}
+
+.main{
+    position: relative;
+    top: 250px;
+}
+
+.click-button{
+    font-family: "Roboto Thin", serif;
+    font-size: 36px;
+    height: 100px;
+    width: 200px;
+}
+
+.click-amount{
+    font-family: "Roboto Thin", serif;
+    font-size: 36px;
+}
+
