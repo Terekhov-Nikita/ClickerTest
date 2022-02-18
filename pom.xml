@@ -26,6 +26,13 @@
             <scope>provided</scope>
         </dependency>
 
+        <!--Persistence-->
+        <dependency>
+            <groupId>javax.persistence</groupId>
+            <artifactId>javax.persistence-api</artifactId>
+            <version>2.2</version>
+        </dependency>
+
         <!--Spring-->
         <dependency>
             <groupId>org.springframework.boot</groupId>
