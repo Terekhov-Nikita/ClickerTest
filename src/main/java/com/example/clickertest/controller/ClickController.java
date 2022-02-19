@@ -17,11 +17,11 @@ public class ClickController {
 
     @PostMapping
     public @ResponseBody
-    ResponseEntity<Integer> incrementCounter(){
+    ResponseEntity<Long> incrementCounter(){
         Optional<Click> n = clickerRepository.findById(1L);
         if (n.isEmpty()){
             clickerRepository.save(new Click(1));
-            return ResponseEntity.ok(1);
+            return ResponseEntity.ok(1L);
         } else {
             Click click = n.get();
             click.setClickAmount(click.getClickAmount()+1);
@@ -32,7 +32,7 @@ public class ClickController {
 
     @GetMapping
     public @ResponseBody
-    ResponseEntity<Integer> getClick(){
+    ResponseEntity<Long> getClick(){
         Optional<Click> n = clickerRepository.findById(1L);
         Click click;
         if (n.isEmpty())
@@ -41,5 +41,4 @@ public class ClickController {
             click = n.get();
         return ResponseEntity.ok(click.getClickAmount());
     }
-
 }

@@ -17,7 +17,7 @@ public class Click {
 
     @Column(nullable = true)
 
-    private int clickAmount;
+    private long clickAmount;
 
     public Click(int i) {
     }
