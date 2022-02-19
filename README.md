@@ -7,6 +7,9 @@ cd ClickerTest
 
 #В файле src\main\resources\application.properties поменять свойства spring.datasource.url, spring.datasource.username и spring.datasource.password на соответствующие вашей БД PostgreSQL
 
-mvn clean package
+mvn compile
+mvn package
 
-java -jar target/ClickerTest-1.0.jar
+cd target
+
+java -jar ClickerTest-0.0.1-SNAPSHOT.jar
